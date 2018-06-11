@@ -1,0 +1,7 @@
+c:\users\frees\source\repos\Lab1MathProblem\Lab1MathProblem\bin\Debug\Lab1MathProblem.exe.config
+c:\users\frees\source\repos\Lab1MathProblem\Lab1MathProblem\bin\Debug\Lab1MathProblem.exe
+c:\users\frees\source\repos\Lab1MathProblem\Lab1MathProblem\bin\Debug\Lab1MathProblem.pdb
+c:\users\frees\source\repos\Lab1MathProblem\Lab1MathProblem\obj\Debug\Lab1MathProblem.csprojAssemblyReference.cache
+c:\users\frees\source\repos\Lab1MathProblem\Lab1MathProblem\obj\Debug\Lab1MathProblem.csproj.CoreCompileInputs.cache
+c:\users\frees\source\repos\Lab1MathProblem\Lab1MathProblem\obj\Debug\Lab1MathProblem.exe
+c:\users\frees\source\repos\Lab1MathProblem\Lab1MathProblem\obj\Debug\Lab1MathProblem.pdb
