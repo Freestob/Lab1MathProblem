@@ -27,6 +27,7 @@ namespace Lab1MathProblem
             var blockNumberTwo = entryTwo;
 
             //This portion selects the individual numbers in the var
+
             char cOneOne = entryOne[0];
             char cOneTwo = entryOne[1];
             char cOneThree = entryOne[2];
@@ -37,18 +38,23 @@ namespace Lab1MathProblem
 
             // This  portion converts the chars into ints
 
-            int iOneOne = cOneOne - '0';
-            int iOneTwo = cOneTwo - '0';
-            int iOneThree = cOneThree - '0';
+            var iOneOne = cOneOne - '0';
+            var iOneTwo = cOneTwo - '0';
+            var iOneThree = cOneThree - '0';
 
-            int iTwoOne = cTwoOne - '0';
-            int iTwoTwo = cTwoTwo - '0';
-            int iTwoThree = cTwoThree - '0';
+            var iTwoOne = cTwoOne - '0';
+            var iTwoTwo = cTwoTwo - '0';
+            var iTwoThree = cTwoThree - '0';
+
+            Console.WriteLine(iOneOne+iTwoTwo);
+
+
+                
             
 
            
-
-            Console.WriteLine(iTwoOne + iOneOne); 
+        
+            
 
 
 
