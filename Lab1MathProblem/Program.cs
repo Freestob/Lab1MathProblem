@@ -9,6 +9,10 @@ namespace Lab1MathProblem
         // sums to the same total.   
         static void Main(string[] args)
         {
+            Console.WriteLine("This program will ask you to enter two numbers.");
+            Console.WriteLine();
+            Console.WriteLine("It will check to see if the corresponding number places (ones, tens, etc) sum to the same total");
+            Console.WriteLine();
             // This portion of code calls upon the function to assign the value to the two ints
 
             int vEntryOne = GetNumberInput();
@@ -19,7 +23,9 @@ namespace Lab1MathProblem
             int[] arrayTwo = UserNumberToArray(vEntryTwo);
 
            
-
+            // This portion sets a new int called sum to the 0th number in each array as the standard. It then has a new interger
+            // that runs through a loop to compare itself to sum. If at anytime the two ints != each other the program prints false.
+            // If the loop never returns false it prints true.
             int sum;
             sum = arrayOne[0] + arrayTwo[0];
 
@@ -40,7 +46,9 @@ namespace Lab1MathProblem
 
         }
 
-
+        // This function converts the string the user enters into an int. If the user inputs something that cannot be converted
+        // into an int it asks the user to input a valid number. If the number is negative it also asks the user to input a positive
+        // number.
         static int GetNumberInput()
         {
             string userInput;
