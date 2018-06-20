@@ -10,9 +10,9 @@ namespace Lab1MathProblem
         static void Main(string[] args)
         {
             Console.WriteLine("This program will ask you to enter two numbers.");
-            Console.WriteLine();
-            Console.WriteLine("It will check to see if the corresponding number places (ones, tens, etc) sum to the same total");
-            Console.WriteLine();
+            Console.WriteLine("\n" + "It will check to see if the corresponding number places (ones, tens, etc) sum to the same total.");
+            Console.WriteLine("\n" + "If the do add to the same sum it will print true. If not it will print false.");
+            
             // This portion of code calls upon the function to assign the value to the two ints
 
             int vEntryOne = GetNumberInput();
@@ -35,14 +35,14 @@ namespace Lab1MathProblem
                 int nextSum = arrayOne[index] + arrayTwo[index];
                 if (nextSum != sum)
                 {
-                    Console.WriteLine("False");
+                    Console.WriteLine("\n" + "False");
                     return;
                 }
 
                 index = index + 1;
                 
             }
-            Console.WriteLine("True");
+            Console.WriteLine("\n" + "True");
 
         }
 
@@ -54,7 +54,7 @@ namespace Lab1MathProblem
             string userInput;
             int userNumber;
 
-            Console.WriteLine("Please input a number.");
+            Console.WriteLine("\n" + "Please input a number.");
             userInput = Console.ReadLine();
             bool success = int.TryParse(userInput, out userNumber);
 
@@ -62,7 +62,7 @@ namespace Lab1MathProblem
             {
                 if (userNumber < 0)
                 {
-                    Console.WriteLine("Please input a positve number");
+                    Console.WriteLine("\n" + "Please input a positve number");
                     return GetNumberInput();
                 }
 
@@ -70,7 +70,7 @@ namespace Lab1MathProblem
             }
             else
             {
-                Console.WriteLine("Please input a valid number.");
+                Console.WriteLine("\n" + "Please input a valid number.");
                 return GetNumberInput();
             }
 
