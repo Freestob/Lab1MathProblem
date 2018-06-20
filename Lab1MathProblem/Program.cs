@@ -22,16 +22,13 @@ namespace Lab1MathProblem
             int numberOne = arrayOne[0] + arrayTwo[0];
             // I have two arrays. I need to find the sum of each digit in the arrays
             // "123", "321"
+            // |0, 1, 2|
             // [1, 2, 3]
             // [3, 2, 1]
             //  4  4  4
 
-            // "545", "7232"
-            //    [5, 4, 5]
-            // [7, 2, 3, 2]
-            //  7  7  7  7
-
-
+            //int sum
+            //sum = arrayOne[0] + arrayTwo[0];
 
 
         }
