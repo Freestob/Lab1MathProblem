@@ -5,33 +5,41 @@ namespace Lab1MathProblem
 {
     class Program
     {
-        // The purpose of this program is to Check if each corresponding place in the two numbers (ones, tens, hundreds, …)
+        // The purpose of this program is to check if each corresponding place in the two numbers (ones, tens, hundreds, …)
         // sums to the same total.   
         static void Main(string[] args)
         {
-            // This portion of code calls upon the functoin to assign the value to the two ints
+            // This portion of code calls upon the function to assign the value to the two ints
 
             int vEntryOne = GetNumberInput();
             int vEntryTwo = GetNumberInput();
 
-            //Console.WriteLine(vEntryOne + vEntryTwo);
-
+            // This portion calls upon the function to transform the ints into an array
             int[] arrayOne = UserNumberToArray(vEntryOne);
             int[] arrayTwo = UserNumberToArray(vEntryTwo);
 
-            int numberOne = arrayOne[0] + arrayTwo[0];
-            // I have two arrays. I need to find the sum of each digit in the arrays
-            // "123", "321"
-            // |0, 1, 2|
-            // [1, 2, 3]
-            // [3, 2, 1]
-            //  4  4  4
+           
 
-            //int sum
-            //sum = arrayOne[0] + arrayTwo[0];
+            int sum;
+            sum = arrayOne[0] + arrayTwo[0];
 
+            int index = 0;
+            while (index < arrayOne.Length)
+            {
+                int nextSum = arrayOne[index] + arrayTwo[index];
+                if (nextSum != sum)
+                {
+                    Console.WriteLine("False");
+                    return;
+                }
+
+                index = index + 1;
+                
+            }
+            Console.WriteLine("True");
 
         }
+
 
         static int GetNumberInput()
         {
