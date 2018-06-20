@@ -14,13 +14,28 @@ namespace Lab1MathProblem
             int vEntryOne = GetNumberInput();
             int vEntryTwo = GetNumberInput();
 
-            Console.WriteLine(vEntryOne + vEntryTwo);
+            //Console.WriteLine(vEntryOne + vEntryTwo);
 
             int[] arrayOne = UserNumberToArray(vEntryOne);
             int[] arrayTwo = UserNumberToArray(vEntryTwo);
-            Console.WriteLine(arrayOne[0]);
-            Console.WriteLine(arrayTwo[0]);
+
+            int numberOne = arrayOne[0] + arrayTwo[0];
+            // I have two arrays. I need to find the sum of each digit in the arrays
+            // "123", "321"
+            // [1, 2, 3]
+            // [3, 2, 1]
+            //  4  4  4
+
+            // "545", "7232"
+            //    [5, 4, 5]
+            // [7, 2, 3, 2]
+            //  7  7  7  7
+
+
+
+
         }
+
         static int GetNumberInput()
         {
             string userInput;
@@ -32,6 +47,12 @@ namespace Lab1MathProblem
 
             if (success == true)
             {
+                if (userNumber < 0)
+                {
+                    Console.WriteLine("Please input a positve number");
+                    return GetNumberInput();
+                }
+
                 return userNumber;
             }
             else
@@ -51,12 +72,12 @@ namespace Lab1MathProblem
             // decimal place.
 
             List<int> numberArray = new List<int>();
-            while(number > 0)
+            while (number > 0)
             {
                 numberArray.Add(number % 10);
                 number /= 10;
             }
-            return new int[0];
+            return numberArray.ToArray();
         }
 
 
